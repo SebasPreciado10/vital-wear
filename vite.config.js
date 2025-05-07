@@ -5,6 +5,7 @@ import autoprefixer from 'autoprefixer'
 
 export default defineConfig({
   plugins: [react()],
+  base: '/vital-wear/', 
   css: {
     postcss: {
       plugins: [
@@ -14,9 +15,7 @@ export default defineConfig({
     },
   },
   server: {
-    // Permite cualquier host
     host: '0.0.0.0',
-    // Permite todos los hosts
     allowedHosts: 'all'
   }
 })
